@@ -27,7 +27,11 @@
 }
 
 .contatoCampo-checkbox {
-  display: none;
+  /* display: none; */
+  /* visibility: hidden; */
+  position: absolute;
+  left: 9999;
+  opacity: 0;
 }
 
 .contatoCampo-icone {
