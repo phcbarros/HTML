@@ -27,3 +27,13 @@ function fechandoDialog() {
 
 // Listeners
 document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog);
+
+document.addEventListener('keyup', function(evt) {
+  if (evt.keyCode == 27) {
+    fechandoDialog();
+  }
+});
+
+dialogOverlay.addEventListener('click', function(){
+  fechandoDialog();
+});
