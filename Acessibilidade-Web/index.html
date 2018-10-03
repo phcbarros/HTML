@@ -27,6 +27,9 @@
 
 <body>
 
+  <div id="conteudoForaDialog">
+
+  
   <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
   <header class="cabecalho container">
@@ -157,7 +160,7 @@
         </h2>
 
         <div class="secaoPlanos-plano secaoPlanos-plano--start">
-          <h3 class="secaoPlanos-plano-titulo"><span class="esconder-visualmente">Plano </span>Start</h3>
+          <h3 class="secaoPlanos-plano-titulo"><span class="escondeVisualmente">Plano </span>Start</h3>
           <span class="secaoPlanos-plano-preco"> R$ 500 </span>
           <ul class="secaoPlanos-plano-itens">
             <li>5 manutenções mensais</li>
@@ -165,12 +168,12 @@
             <li>1 sistema operacional</li>
           </ul>
           <a href="#" class="btnPadrao secaoPlanos-plano-btn">
-            Assinar plano <span class="esconder-visualmente">Start por R$ 500</span>
+            Assinar plano <span class="escondeVisualmente">Start por R$ 500</span>
           </a>
         </div>
 
         <div class="secaoPlanos-plano secaoPlanos-plano--ultra">
-          <h3 class="secaoPlanos-plano-titulo"><span class="esconder-visualmente">Plano </span>Ultra</h3>
+          <h3 class="secaoPlanos-plano-titulo"><span class="escondeVisualmente">Plano </span>Ultra</h3>
           <span class="secaoPlanos-plano-preco"> R$ 1500 </span>
           <ul class="secaoPlanos-plano-itens">
             <li>20 manutenções mensais</li>
@@ -179,12 +182,12 @@
             <li>24h de atendimento</li>
           </ul>
           <a href="#" class="btnPadrao secaoPlanos-plano-btn">
-            Assinar plano <span class="esconder-visualmente">Ultra por R$ 1500</span>
+            Assinar plano <span class="escondeVisualmente">Ultra por R$ 1500</span>
           </a>
         </div>
 
         <div class="secaoPlanos-plano secaoPlanos-plano--mega">
-          <h3 class="secaoPlanos-plano-titulo"><span class="esconder-visualmente">Plano </span>Mega</h3>
+          <h3 class="secaoPlanos-plano-titulo"><span class="escondeVisualmente">Plano </span>Mega</h3>
           <span class="secaoPlanos-plano-preco"> R$ 1000 </span>
           <ul class="secaoPlanos-plano-itens">
             <li>10 manutenções mensais</li>
@@ -192,7 +195,7 @@
             <li>2 sistemas operacionais</li>
           </ul>
           <a href="#" class="btnPadrao secaoPlanos-plano-btn">
-            Assinar plano <span class="esconder-visualmente">Mega por R$ 1000</span>
+            Assinar plano <span class="escondeVisualmente">Mega por R$ 1000</span>
           </a>
         </div>
 
@@ -309,29 +312,7 @@
         </button>
       </div>
 
-      <div class="dialogNewsletter" id="dialogNewsletter">
-        <div class="dialogNewsletter-body">
-
-          <h2 class="dialogNewsletter-titulo">News sem spam</h2>
-          <h3 class="dialogNewsletter-texto">
-            Assine nossa newsletter para receber notícias técnicas sem spam!
-          </h3>
-          <form class="dialogNewsletter-form">
-            <label class="dialogNewsletter-label">
-              Email:
-            </label>
-            <input type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
-            <button class="dialogNewsletter-btn">
-              Assinar newsletter
-            </button>
-            <button class="dialogNewsletter-fechar">
-              X
-            </button>
-          </form>
-        </div>
-        <div class="dialogNewsletter-overlay"></div>
-      </div>
-      <!--fim .dialogNewsletter-->
+     
 
     </section>
     <!--fim .secaoDestaques-->
@@ -482,7 +463,33 @@
     </div>
 
   </footer>
+</div>
+
+<div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="tituloDialog">
+  <div class="dialogNewsletter-body">
+
+    <h2 class="dialogNewsletter-titulo" id="tituloDialog">News sem spam</h2>
+    <h3 class="dialogNewsletter-texto">
+      Assine nossa newsletter para receber notícias técnicas sem spam!
+    </h3>
+    <form class="dialogNewsletter-form">
+      <label class="dialogNewsletter-label" for="emailNewsletter">
+        Email:
+      </label>
+      <input type="email" id="emailNewsletter" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
+      <button class="dialogNewsletter-btn"  type="submit">
+        Assinar newsletter
+      </button>
+      <button class="dialogNewsletter-fechar" type="button">
+        X
+      </button>
+    </form>
+  </div>
+  <div class="dialogNewsletter-overlay"></div>
+</div>
+<!--fim .dialogNewsletter-->
   <script src="js/carousel.js"></script>
+  <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
 </body>
 
