@@ -340,11 +340,10 @@
                 <input id="nome" type="text" class="contatoCampo--validouFoi" required placeholder="Nome...">
               </div>
 
-              <div class="contatoCampo contatoCampo--erro">
+              <div class="contatoCampo">
                 <label for="email">Email: </label>
-                <input id="email" type="email" class="contatoCampo--validouErro" required placeholder="Email...">
-                <span class="contatoCampo-msg contatoCampo-msg--erro">
-                  Você quis dizer <a href="#">gmail.com?</a>
+                <input id="email" type="email" required placeholder="Email...">
+                <span id="sugestaoEmail" class="contatoCampo-msg contatoCampo-msg--erro">
                 </span>
               </div>
 
@@ -499,6 +498,9 @@
   <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
   <script src="js/validacao-cep.js"></script>
+  <script src="js/mailcheck.min.js"></script>
+  <script src="js/mailcheck-config.js"></script>
+  
 </body>
 
 </html>
