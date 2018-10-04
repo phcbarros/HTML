@@ -210,7 +210,9 @@
         BLOG
       </h2>
 
-      <ul class="listaDeArtigos">
+    <h3 id="tituloBlog" class="escondeVisualmente">Lista de artigos</h3>
+
+      <ul class="listaDeArtigos" aria-labelledby="tituloBlog">
 
         <li id="new0" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
@@ -266,7 +268,7 @@
         <ul class="listaDeArtigos-slider">
           <li>
             <a href="#new0" data-sliderItem="0" class="listaDeArtigos-slider-item listaDeArtigos-slider-item--ativo">
-              Notícia 1
+              Notícia 1 <span class="escondeVisualmente">Slide Atual</span>
             </a>
           </li>
           <li>
@@ -311,8 +313,6 @@
           Receber destaques por email
         </button>
       </div>
-
-     
 
     </section>
     <!--fim .secaoDestaques-->
